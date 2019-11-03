@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Aseo</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/aseo.css">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script type="text/javascript">
+    var audios = new Array();
+
+    function rep(elaudio) {
+
+      audios = document.getElementsByTagName('audio');
+      var i;
+      for (i = 0; i < audios.length; i++) {
+        if (audios[i].id == elaudio) {
+          audios[i].load();
+          audios[i].play();
+
+        } else {
+          audios[i].load();
+          //  audios[i].play();
+          audios[i].pause();
+
+        }
+      }
+
+    }
+
+    window.onload = function() {
+      playPause();
+    }
+  </script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+    $(function() {
+      $('.carousel').carousel();
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    $(function() {
+      $('.carousel').carousel({
+        dist: -40,
+        padding: 50,
+        shift: 50,
+        indicators: true
+      });
+    });
+  </script>
+  <header>
+    <nav class="nav-wrapper  blue_nav   ">
+      <div class="row valign-wrapper">
+        <a href="../../menuprincipal.html" data-tooltip="Volver" data-position="bottom"  class="light-blue waves-effect waves-light btn col s2 tooltipped">
+          <-</a>
+            <H5 class="center nombreActividad col s10"> QUÉ NECESITAS PARA BAÑARTE </H5>
+            <a href="./actividad2.html" data-position="bottom" data-tooltip="Siguiente" class="light-blue waves-effect waves-light btn col s2 left-align tooltipped">-></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row nomargin">
+        <br>
+        <img class="imagenActividad hide-on-small-only hide-on-med-only valign center" src="../../assets/media/img/aseo/banioFijo.jpg" alt="">
+        <img class="imagenActividadReponsive hide-on-large-only valign center" src="../../assets/media/img/aseo/banioFijo.jpg" alt="">
+      </div>
+    </div>
+    <!-- Fin de container -->
+    <div id="cosasDeBanio" class="col s12  ">
+      <div class="carousel" style="z-index: 1;">
+
+        <div class="carousel-item">
+          <!-- Jabón  -->
+
+          <audio preload="auto" id="jabon">
+               <source src="../../assets/media/audio/aseo/jabon.ogg" type="audio/ogg"/>
+               <source src="../../assets/media/audio/aseo/jabon.mp3" type="audio/mp3"/>
+          </audio>
+          <div class="col s4">
+            <div class="card" id="jabonBtn"  onclick="rep('jabon');">
+              <div class="card-image materialboxed" width="650">
+                <img src="../../assets/media/img/aseo/jabon.jpg">
+              </div>
+              <div class="card-content yellow darken-3">
+                <h5 class="center-align white-text">Jabón</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- Shampu  -->
+
+          <audio preload="auto" id="shampu">
+               <source src="../../assets/media/audio/aseo/shampu.ogg" type="audio/ogg"/>
+               <source src="../../assets/media/audio/aseo/shampu.mp3" type="audio/mp3"/>
+          </audio>
+          <div class="col s4">
+            <div class="card" onclick="rep('shampu');">
+              <div class="card-image materialboxed" width="650">
+                <img src="../../assets/media/img/aseo/shampu.jpg">
+              </div>
+              <div class="card-content yellow darken-3">
+                <h5 class="center-align white-text">Shampu</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Fin item shampu -->
+        <div class="carousel-item">
+          <!-- Toalla   -->
+
+          <audio preload="auto" id="toalla">
+               <source src="../../assets/media/audio/aseo/toalla.ogg" type="audio/ogg"/>
+               <source src="../../assets/media/audio/aseo/toalla.mp3" type="audio/mp3"/>
+          </audio>
+          <div class="col s4">
+            <div class="card" onclick="rep('toalla');">
+              <div class="card-image materialboxed" width="650">
+                <img src="../../assets/media/img/aseo/toalla.jpg">
+              </div>
+              <div class="card-content yellow darken-3">
+                <h5 class="center-align white-text">Toalla</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Fin item toalla -->
+        <div class="carousel-item">
+          <!-- Esponja   -->
+
+          <audio preload="auto" id="esponja">
+               <source src="../../assets/media/audio/aseo/esponja.ogg" type="audio/ogg"/>
+               <source src="../../assets/media/audio/aseo/esponja.mp3" type="audio/mp3"/>
+          </audio>
+          <div class="col s4">
+            <div class="card" onclick="rep('esponja');">
+              <div class="card-image materialboxed" width="650">
+                <img src="../../assets/media/img/aseo/esponja.jpg">
+              </div>
+              <div class="card-content yellow darken-3 image-placeholder">
+                <h5 class="center-align white-text">Esponja</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Fin item toalla -->
+
+      </div>
+      <!-- Fin de div Carrusel  -->
+    </div>
+
+  </main>
+
+
+  <footer class="page-footer card-panel  grey lighten-5 footer">
+
+    <div class="container center-align black-text text-darken-2">
+      ©2018 UpDown Todos los derechos reservados.
+    </div>
+
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.materialboxed').materialbox();
+    });
+  </script>
+  <script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+</body>
+
+</html>

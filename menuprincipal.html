@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+
+     <link rel="icon" type="image/png" sizes="120x120" href="assets/media/img/favicon.png">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
+	 <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
+
+<style>
+    .backdrop{
+       background-color: #0d47a1;
+     }
+  </style>
+
+</head>
+
+<body >
+
+<!-- menu lado izquiero -->
+	<nav class="nav-wrapper card-panel blue_nav accent-2 left-align panel2">
+	    <div class="panel" >
+
+				<ul class="rigth" >
+				<li>
+					<a data-activates="slide-out" class="brand-logo"><i class="material-icons">&#xE5D2;</i></a>
+					<li><a id="carga"><i class="brand-logo" class="material-icons"></i>UpDown</a></li>
+				</li>
+				</ul>
+
+
+
+				<ul class="right" id="centrado" >
+	        <li><a href="menuprincipal.html"><i class="material-icons">refresh</i></a></li>
+	        <li><a id="mos" href="#"><i class="material-icons">account_circle</i></a></li>
+
+	      </ul>
+
+
+
+	      <ul id="slide-out" class="side-nav fondomenu"  >
+
+					<li>
+						<div class="user-view" >
+            <div class="background">
+
+            <img src="assets/media/img/fondo.png">
+            </div>
+
+          </div>
+				</li>
+
+
+          <li><a href="contacto.html">Contáctanos</a></li>
+          <li><a href="#!">Acerca de UpDown</a></li>
+          <li><a href="#!">Guía de usuario</a></li>
+          <li><a href="#!">Foro</a></li>
+          <li><a href="#!">Conoce más sobre el tema</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="#!">Ajustes</a></li>
+        </ul>
+
+
+	    </div>
+
+
+	</nav >
+
+
+<!-- Registro lado derecho menu de arriba  -->
+	<div id="lo" class="ver row col-s6 lefft-aliang">
+		<div class="le ">
+			<h1 class="h">Iniciar Sesión</h1>
+
+			<input type="text" name="Usuario o Email" placeholder="Nombre de Usuario" />
+			<input type="password" name="Contrasena" placeholder="Contraseña" />
+			<input type="submit" name="Entrar" value="Entrar" />
+
+		</div>
+
+
+		<div class="ri">
+			<h1 class="h">Registro</h1>
+			<input type="text" name="Usuario" placeholder="Nombre de Usuario"/>
+			<input type="email" name="Email" placeholder="Correo" />
+			<input type="password" name="Contrasena" placeholder="Contraseña"/>
+			<input type="password" name="Contrasena" placeholder="Confirmar contraseña" />
+			<input type="submit" name="Entrar" value="Registrarse"/>
+
+
+		</div>
+		<div class="or">O</div>
+
+	</div>
+
+
+<section>
+
+
+
+
+<!-- circulo arriba verde -->
+<!--
+<div id="acd" class="fixed-action-btn horizontal click-to-toggle">
+    <a id="ac" class="btn-floating btn-large green">
+      <i class="material-icons">menu</i>
+    </a>
+
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+ </div> -->
+ <div>
+ <ul id="navs" style="z-index: 1">
+
+		<li><a class="btn-floating yellow darken-1 tooltipped" href="#" data-position="right" data-tooltip="Prevención"><i class="material-icons">security</i></a></li>
+		<li><a class="btn-floating green tooltipped" href="actividades/alimentación/index.html" data-position="bottom" data-tooltip="Alimentación"><i class="material-icons">restaurant</i></a></li>
+		<li><a class="btn-floating blue tooltipped" href="actividades/vestido/index.html"  data-position="bottom" data-tooltip="Vestido"><i class="material-icons">wc</i></a></li>
+		<li><a class="btn-floating red tooltipped" data-position="left" data-tooltip="Aseo" href="actividades/aseo/index.html" ><i class="material-icons" >hot_tub</i></a></li>
+	</ul>
+
+</div>
+<!-- circulo arriba verde  fin -->
+
+
+<!-- logo -->
+ <div id="acdlo" class="fixed-action-btn horizontal click-to-toggle" style="z-index: -1">
+		 <img src="assets/media/img/updown transparente.png" alt="Logo UpDown"  width="295px" >
+ </div>
+
+
+	<!-- circulo azul izquiero -->
+ 		<div id="acd2" class="fixed-action-btn horizontal click-to-toggle">
+    <a id="ac" class="btn-floating btn-large blue tooltipped" data-position="top" data-tooltip="PRÓXIMAMENTE...">
+      <i class="material-icons"></i>
+    </a>
+   
+		</div>
+
+	<!-- circulo derecho gris -->
+   	<div id="acd3" class="fixed-action-btn horizontal click-to-toggle">
+    <a id="ac" class="btn-floating btn-large grey lighten-1 tooltipped" data-position="top" data-tooltip="PRÓXIMAMENTE...">
+      <i class="material-icons"></i>
+    </a>
+   
+  	</div>
+
+        </section>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+
+	(function(){
+	var ul=$("#navs"),li=$("#navs li"),i=li.length,n=i-1,r=170;
+	ul.click(function(){
+		$(this).toggleClass('active');
+		if($(this).hasClass('active')){
+			for(var a=0;a<i;a++){
+				li.eq(a).css({
+					'transition-delay':""+(50*a)+"ms",
+					'-webkit-transition-delay':""+(50*a)+"ms",
+					'left':(r*Math.cos(-180/n*a*(Math.PI/180))),
+					'top':(-r*Math.sin(-180/n*a*(Math.PI/180)))
+				});
+			}
+		}else{
+			li.removeAttr('style');
+		}
+	});
+})($);
+
+
+	$('.ver').hide();
+			$('#mos').on('click',function(e){
+					$('.ver').slideToggle('slow');
+					e.preventDefault();
+					e.stopPropagation();
+			});
+			$('#si').on('click',function(e){
+					$('.ver').hide();
+			});
+			$('.ver').on('click',function(e){
+					e.stopPropagation();
+			});
+				 $("html").click(function(){
+			 $(".ver").hide();
+	});
+
+</script>
+	<script type="text/javascript" src="assets/js/materialize.js"></script>
+
+	<script type="text/javascript">$(".brand-logo").sideNav();</script>
+
+
+</body>
+</html>

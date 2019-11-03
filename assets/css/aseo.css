@@ -1,0 +1,49 @@
+@font-face {
+  font-family: le;
+  src: url(../fonts/Quicksand-Regular.otf);
+}
+
+.imagenActividad {
+  width: 325px;
+  height: 225px;
+}
+
+.imagenActividadReponsive {
+  width: 175px;
+  height: 125;
+}
+
+.nombreActividad{
+  font-family:le ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nombreActividadTablet{
+  font-family: "le";
+  font-size: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nomargin {
+  margin: 0;
+}

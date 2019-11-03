@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+
+	<title>ALIMENTACIÓN</title>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="../../assets/css/es.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../assets/css/materialize.css">
+	  <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" type="image/png" sizes="120x120" href="../../assets/media/img/favicon.png">
+
+
+      <script type="text/javascript">
+
+        var audios = new Array();
+
+          function rep(elaudio){
+
+                  audios=document.getElementsByTagName('audio');
+                  var i;
+                      for (i=0; i<audios.length; i++) {
+                          if (audios[i].id==elaudio){
+                                 audios[i].load();
+                                 audios[i].play();
+
+                          }   else{
+																  audios[i].load();
+                                //  audios[i].play();
+																	audios[i].pause();
+
+                              }
+                      }
+
+          }
+
+					window.onload = function(){
+						 //playPause();
+					}
+
+
+      </script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+   <style>
+    .backdrop{
+       background-color: #0d47a1;
+     }
+  </style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+          $('.carousel').carousel ({
+            dist: -40 ,
+            padding: 50,
+            shift: 50,
+            indicators: true
+          });
+
+          $('.carousel').find('.carousel-item[style*="z-index: 0"]').click(function() {
+             $('.materialboxed').materialbox();
+           });
+        });
+
+      </script>
+
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+           $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+
+      </script>
+
+<header>
+    <nav class="nav-wrapper  blue_nav blue z-depth-0">
+      <div class="row valign-wrapper">
+        <a href="../../menuprincipal.html" class="material-icons light-blue waves-effect waves-light btn col s2 tooltipped" data-position="bottom" data-tooltip="Volver">&#xE5C4;</a>
+           <br><h5 class="center col s10">CONOCE LOS DIFERENTES ALIMENTOS</h5>
+            <a href="../../actividades/alimentación/alimentación2/indox.html" class="material-icons light-blue waves-effect waves-light btn col s2 left-align tooltipped" data-position="bottom" data-tooltip="Siguiente">&#xE5C8;</a>
+      </div>
+    </nav>
+  </header>
+
+
+<br>
+<section>
+  
+  <ul class="tabs tablas transparent z-depth-0">
+    <li class="tab col s1"><a class="waves-effect yellow darken-3 btn white-text text-darken-2" href="#cereal">CEREALES</a></li>
+    <li class="tab col s1"><a class="waves-effect green darken-1 btn white-text text-darken-2" href="#vege">VEGETALES</a></li>
+    <li class="tab col s1"><a class="waves-effect pink accent-2 btn white-text text-darken-2" href="#fruta">FRUTAS</a></li>
+    <li class="tab col s1"><a class="waves-effect red darken-1 btn white-text text-darken-2" href="#carne">CARNES</a></li>
+    <li class="tab col s1"><a class="waves-effect light-blue accent-3 btn white-text text-darken-2" href="#lac">LACTEOS</a></li>
+    <li class="tab col s1"><a class="waves-effect amber darken-3 btn white-text text-darken-2" href="#legu">LEGUMINOSAS</a></li>
+    <li class="tab col s1"><a class="waves-effect purple accent-3 btn white-text text-darken-2" href="#chatarra">CHATARRA</a></li>
+    
+  </ul>
+
+
+</section>
+
+<!--Carnes-->
+
+<section>
+
+  <div id="carne" class="col s12 ">
+
+     <div class="carousel" style="z-index: 1;">
+
+<div class="carousel-item">
+
+        <audio preload="auto" id="c1" >
+
+          <source src="../../assets/media/audio/Carne/Cerdo.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('c1');" onclick="rep('c1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color red">
+      <h4 class="center-align white-text">Carne de cerdo</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color red">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/CarneCerdo.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+    
+<div class="carousel-item">
+
+        <audio preload="auto" id="r4" >
+
+          <source src="../../assets/media/audio/Carne/Res.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('r4');" onclick="rep('r4');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color red">
+      <h4 class="center-align white-text">Carne de res</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color red">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/CarneRes.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="carousel-item">
+
+        <audio preload="auto" id="Po1" >
+
+          <source src="../../assets/media/audio/Carne/Pollo.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Po1');" onclick="rep('Po1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color red">
+      <h4 class="center-align white-text">Pollo</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color red">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/Pollo.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="carousel-item">
+
+        <audio preload="auto" id="Pe1" >
+
+          <source src="../../assets/media/audio/Carne/Pescado.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Pe1');" onclick="rep('Pe1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color red">
+      <h4 class="center-align white-text">Pescado</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color red">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/Pescado.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+
+        <audio preload="auto" id="At" >
+
+          <source src="../../assets/media/audio/Carne/atun.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('At');" onclick="rep('At');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color red">
+      <h4 class="center-align white-text">Atún</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color red">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/atun.jpeg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+
+        <audio preload="auto" id="Ja1" >
+
+          <source src="../../assets/media/audio/Carne/jamon.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Ja1');" onclick="rep('Ja1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color red">
+      <h4 class="center-align white-text">Jamón</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color red">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/jamon.jpeg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+
+        <audio preload="auto" id="Sal1" >
+
+          <source src="../../assets/media/audio/Carne/salchichas.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Sal1');" onclick="rep('Sal1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color red">
+      <h4 class="center-align white-text">Salchichas</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color red">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/salchichas.jpeg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+
+        <audio preload="auto" id="lon1" >
+
+          <source src="../../assets/media/audio/Carne/longaniza.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('lon1');" onclick="rep('lon1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color red">
+      <h4 class="center-align white-text">Longaniza</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color red">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/longaniza.jpeg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+  
+</section>
+
+<!--cereales-->
+
+<section>
+
+ <div id="cereal" class="col s12  ">
+
+    <div class="carousel" style="z-index: 1;">
+
+      <div class="carousel-item">
+
+        <audio preload="auto" id="Av1" >
+
+          <source src="../../assets/media/audio/cereales/avena.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Av1');" onclick="rep('Av1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color yellow darken-3">
+      <h4 class="center-align white-text">Avena</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color yellow darken-3">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CEREALES/avena.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+      <div class="carousel-item">
+
+        <audio preload="auto" id="PaC1" >
+
+          <source src="../../assets/media/audio/cereales/panCaja.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('PaC1');" onclick="rep('PaC1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color yellow darken-3">
+      <h4 class="center-align white-text">Pan de caja</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color yellow darken-3">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CEREALES/Pan.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+      <div class="carousel-item">
+
+        <audio preload="auto" id="To1" >
+
+          <source src="../../assets/media/audio/cereales/tortilla.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('To1');" onclick="rep('To1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color yellow darken-3">
+      <h4 class="center-align white-text">Tortillas</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color yellow darken-3">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CEREALES/Tortillas.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+      <div class="carousel-item">
+
+        <audio preload="auto" id="Pasta1" >
+
+          <source src="../../assets/media/audio/cereales/pasta.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Pasta1');" onclick="rep('Pasta1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color yellow darken-3">
+      <h4 class="center-align white-text">Pasta</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color yellow darken-3">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CEREALES/Sopa.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+        <div class="carousel-item">
+
+        <audio preload="auto" id="Bo1" >
+<!--falta audio bolillo-->
+          <source src="../../assets/media/audio/cereales/avena.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Bo1');" onclick="rep('Bo1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color yellow darken-3">
+      <h4 class="center-align white-text">Bolillo</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color yellow darken-3">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CEREALES/Bolillo.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+    <div class="carousel-item">
+
+        <audio preload="auto" id="hoju1" >
+
+          <source src="../../assets/media/audio/cereales/hojuelas.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('hoju1');" onclick="rep('hoju1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color yellow darken-3">
+      <h4 class="center-align white-text">Hojuelas de maíz</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color yellow darken-3">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CEREALES/hojuelas.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+    <div class="carousel-item">
+
+        <audio preload="auto" id="Arr1" >
+
+          <source src="../../assets/media/audio/cereales/arroz.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Arr1');" onclick="rep('Arr1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color yellow darken-3">
+      <h4 class="center-align white-text">Arroz</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color yellow darken-3">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/CEREALES/Arroz.jpeg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!--Frutas-->
+<section>
+
+<div id="fruta" class="col s12 ">
+    <div class="carousel" style="z-index: 1;">
+
+      <div class="carousel-item">
+
+        <audio preload="auto" id="m2" >
+
+          <source src="../../assets/media/audio/Fruta/Manzana.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('m2');" onclick="rep('m2');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color pink accent-2">
+      <h4 class="center-align white-text">Manzana</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color pink accent-2">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Manzana.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+    <div class="carousel-item">
+
+        <audio preload="auto" id="P2" >
+
+          <source src="../../assets/media/audio/Fruta/Platano.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('P2');" onclick="rep('P2');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color pink accent-2">
+      <h4 class="center-align white-text">Plátano</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color pink accent-2">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Platano.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+    <div class="carousel-item">
+
+        <audio preload="auto" id="n2" >
+
+          <source src="../../assets/media/audio/Fruta/Naranja.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('n2');" onclick="rep('n2');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color pink accent-2">
+      <h4 class="center-align white-text">Naranja</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color pink accent-2">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Naranja.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+    <div class="carousel-item">
+
+        <audio preload="auto" id="Pa2" >
+
+          <source src="../../assets/media/audio/Fruta/Papaya.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('Pa2');" onclick="rep('Pa2');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color pink accent-2">
+      <h4 class="center-align white-text">Papaya</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color pink accent-2">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Papaya.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+          <div class="carousel-item">
+
+        <audio preload="auto" id="D1" >
+
+          <source src="../../assets/media/audio/Fruta/Durazno.wav" type="audio/wav"/>
+
+          </audio>
+
+  <div class="flip-card card col s3" ontouchstart="this.classList.toggle('hover'); rep('D1');" onclick="rep('D1');">
+  <div class="flip-card-inner col s3" >
+    <div class="flip-card-inner-front col s3 background-color pink accent-2">
+      <h4 class="center-align white-text">Durazno</h4>
+    </div>
+    <div class="flip-card-inner-back col s3 background-color pink accent-2">
+      <div class="card-image" width="650" >
+      <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Durazno.jpg">
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="S2">
+          <source src="../../assets/media/audio/Fruta/Sandia.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('S2')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Sandia.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect pink accent-2 btn modal-trigger" href="#COMIDA-UpDown/FRUTAS/Sandia.jpg" onclick="rep('Pa2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content pink accent-2">
+                  <h5 class="center-align white-text">Sandía</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="F1">
+          <source src="../../assets/media/audio/Fruta/Fresa.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('F1')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Fresa.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect pink accent-2 btn modal-trigger" href="#COMIDA-UpDown/FRUTAS/Fresa.jpg" onclick="rep('Pa2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content pink accent-2">
+                  <h5 class="center-align white-text">Fresa</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="L1">
+          <source src="../../assets/media/audio/Fruta/Limon.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('L1')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Limon.jpg" >
+                 <!-- <a class="btn-floating halfway-fab waves-effect pink accent-2 btn modal-trigger" href="#COMIDA-UpDown/FRUTAS/Limon.jpg" onclick="rep('Pa2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content pink accent-2">
+                  <h5 class="center-align white-text">Limón</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="Pp2">
+          <source src="../../assets/media/audio/Fruta/Pepino.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Pp2')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/pepino.png" >
+                <!--  <a class="btn-floating halfway-fab waves-effect pink accent-2 btn modal-trigger" href="#COMIDA-UpDown/FRUTAS/pepino.png" onclick="rep('Pa2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content pink accent-2">
+                  <h5 class="center-align white-text">Pepino</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="Pe2">
+          <source src="../../assets/media/audio/Fruta/Pera.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Pe2')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Pera.jpg" >
+                 <!-- <a class="btn-floating halfway-fab waves-effect pink accent-2 btn modal-trigger" href="#COMIDA-UpDown/FRUTAS/Pera.jpg" onclick="rep('Pa2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content pink accent-2">
+                  <h5 class="center-align white-text">Pera</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="U1">
+          <source src="../../assets/media/audio/Fruta/Uva.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('U1')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/FRUTAS/Uvas.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect pink accent-2 btn modal-trigger" href="#COMIDA-UpDown/FRUTAS/Uvas.jpg" onclick="rep('Pa2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content pink accent-2">
+                  <h5 class="center-align white-text">Uvas</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+</div>
+</div>
+
+</section>
+
+<!--Lacteos-->
+
+<section>
+
+<div id="lac" class="col s12 ">
+    <div class="carousel" style="z-index: 1;">
+
+      <div class="carousel-item">
+
+          <audio preload="auto" id="Le2">
+          <source src="../../assets/media/audio/Lacteos/Leche.wav" type="audio/wav"/>
+          </audio>
+
+            <div class="col s4">
+              <div class="card" onclick="rep('Le2')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/LACTEOS/Leche.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect light-blue accent-3 btn modal-trigger" href="#COMIDA-UpDown/LACTEOS/Leche.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content light-blue accent-3">
+                  <h5 class="center-align white-text">Leche</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="Q1">
+          <source src="../../assets/media/audio/Lacteos/Queso.wav" type="audio/wav"/>
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Q1')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/LACTEOS/queso.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect light-blue accent-3 btn modal-trigger" href="#COMIDA-UpDown/LACTEOS/queso.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content light-blue accent-3">
+                  <h5 class="center-align white-text">Queso</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="Y1">
+          <source src="../../assets/media/audio/Lacteos/Yogurt.wav" type="audio/wav"/>
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Y1')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/LACTEOS/Yogurt.jpg" >
+                 <!-- <a class="btn-floating halfway-fab waves-effect light-blue accent-3 btn modal-trigger" href="#COMIDA-UpDown/LACTEOS/Yogurt.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content light-blue accent-3">
+                  <h5 class="center-align white-text">Yogurt</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="cr1">
+          <source src="../../assets/media/audio/Lacteos/Crema.wav" type="audio/wav"/>
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('cr1')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/LACTEOS/crema.jpg" >
+                 <!-- <a class="btn-floating halfway-fab waves-effect light-blue accent-3 btn modal-trigger" href="#COMIDA-UpDown/LACTEOS/Yogurt.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content light-blue accent-3">
+                  <h5 class="center-align white-text">Crema</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+</div>
+</div>
+
+</section>
+
+<section>
+
+<div id="vege" class="col s12 ">
+    <div class="carousel" style="z-index: 1;">
+
+      <div class="carousel-item">
+
+         <audio preload="auto" id="Zan1" >
+         <source src="../../assets/media/audio/vegetales/zanahoria.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Zan1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/zanahoria.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/zanahoria.jpg" onclick="rep('3');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Zanahoria</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="Papa1" >
+         <source src="../../assets/media/audio/vegetales/papa.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Papa1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/papa.jpg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/papa.jpg" onclick="rep('3');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Papa</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+
+     <div class="carousel-item">
+
+          <audio preload="auto" id="lech1" >
+         <source src="../../assets/media/audio/vegetales/lechuga.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('lech1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/Lechuga.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/Lechuga.jpg" onclick="rep('3');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Lechuga</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="elo1" >
+         <source src="../../assets/media/audio/vegetales/elote.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('elo1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/Elote.jpg" >
+            <!--      <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/Elote.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Elote</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="ejo1" >
+         <source src="../../assets/media/audio/vegetales/ejote.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('ejo1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/Ejotes.jpg" >
+                 <!-- <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/Ejotes.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Ejotes</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="chich1" >
+         <source src="../../assets/media/audio/vegetales/chicharos.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('chich1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/Chicharos.jpg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/Chicharos.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Chícharos</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="champ1" >
+         <source src="../../assets/media/audio/vegetales/champiñones.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('champ1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/champiñones.jpg" >
+             <!--     <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/champiñones.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Champiñones</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="cala1" >
+         <source src="../../assets/media/audio/vegetales/calabaza.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('cala1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/Calabaza.jpg" >
+             <!--     <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/Calabaza.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Calabaza</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="broco1" >
+         <source src="../../assets/media/audio/vegetales/brocoli.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('broco1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/Brocoli.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/Brocoli.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Brócoli</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="jito1" >
+         <source src="../../assets/media/audio/vegetales/jitomates.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('jito1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/VERDURA/Jitomate.jpg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/Jitomate.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content green darken-1">
+                  <h5 class="center-align white-text">Jitomates</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+</div>
+</div>
+
+
+</section>
+
+<section>
+
+  <div id="legu" class="col s12 ">
+    <div class="carousel" style="z-index: 1;">
+
+      <div class="carousel-item">
+
+          <audio preload="auto" id="Fr">
+          <source src="../../assets/media/audio/legu/frijoles.wav" type="audio/wav"/>
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Fr')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/Frijoles1.jpg" >
+              <!--    <a class="btn-floating halfway-fab waves-effect amber darken-3 btn modal-trigger" href="#COMIDA-UpDown/CARNES Y LEGUMBRES/Frijoles1.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content amber darken-3">
+                  <h5 class="center-align white-text">Frijoles</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+           <audio preload="auto" id="Ln">
+          <source src="../../assets/media/audio/legu/lentejas.wav" type="audio/wav"/>
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Ln')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/Lentejas.jpg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect amber darken-3 btn modal-trigger" href="#COMIDA-UpDown/CARNES Y LEGUMBRES/Lentejas.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content amber darken-3">
+                  <h5 class="center-align white-text">Lentejas</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+           <audio preload="auto" id="Gb">
+          <source src="../../assets/media/audio/legu/garbanzos.wav" type="audio/wav"/>
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Gb')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/garbanzos.jpeg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect amber darken-3 btn modal-trigger" href="#COMIDA-UpDown/CARNES Y LEGUMBRES/garbanzos.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content amber darken-3">
+                  <h5 class="center-align white-text">Garbanzos</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+ <div class="carousel-item">
+
+           <audio preload="auto" id="Hb">
+          <source src="../../assets/media/audio/legu/habas.wav" type="audio/wav"/>
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Hb')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/habas.jpg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect amber darken-3 btn modal-trigger" href="#COMIDA-UpDown/CARNES Y LEGUMBRES/garbanzos.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content amber darken-3">
+                  <h5 class="center-align white-text">Habas</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+ <div class="carousel-item">
+
+          <audio preload="auto" id="Ch">
+          <source src="../../assets/media/audio/legu/cacahuates.wav" type="audio/wav"/>
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('Ch')">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CARNES Y LEGUMBRES/Cacahuate.jpg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect amber darken-3 btn modal-trigger" href="#COMIDA-UpDown/CARNES Y LEGUMBRES/garbanzos.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content amber darken-3">
+                  <h5 class="center-align white-text">Cacahuates</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+ </div>
+ </div>
+
+</section>
+
+<section>
+
+ <div id="chatarra" class="col s12 ">
+    <div class="carousel" style="z-index: 1;">
+
+      <div class="carousel-item">
+
+          <audio preload="auto" id="choco1" >
+         <source src="../../assets/media/audio/chatarra/chocolate.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('choco1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CHATARRA/chocolate.jpg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect purple accent-3 btn modal-trigger" href="#COMIDA-UpDown/CHATARRA/chocolate.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content purple accent-3">
+                  <h5 class="center-align white-text">Chocolate</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="pale1" >
+         <source src="../../assets/media/audio/chatarra/paletas.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('pale1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CHATARRA/Paletas.png" >
+               <!--   <a class="btn-floating halfway-fab waves-effect purple accent-3 btn modal-trigger" href="#COMIDA-UpDown/CHATARRA/Paletas.png" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content purple accent-3">
+                  <h5 class="center-align white-text">Paletas</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="gomi1" >
+         <source src="../../assets/media/audio/chatarra/gomitas.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('gomi1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CHATARRA/Gomitas.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect purple accent-3 btn modal-trigger" href="#COMIDA-UpDown/CHATARRA/Gomitas.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content purple accent-3">
+                  <h5 class="center-align white-text">Gomitas</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="PapaF1" >
+         <source src="../../assets/media/audio/chatarra/papasFritas.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('PapaF1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CHATARRA/PapasFritas.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect purple accent-3 btn modal-trigger" href="#COMIDA-UpDown/CHATARRA/PapasFritas.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content purple accent-3">
+                  <h5 class="center-align white-text">Papas fritas</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="PapaF2" >
+         <source src="../../assets/media/audio/chatarra/papasFrancesa.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('PapaF2');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CHATARRA/PapasFran.jpg" >
+               <!--   <a class="btn-floating halfway-fab waves-effect purple accent-3 btn modal-trigger" href="#COMIDA-UpDown/CHATARRA/PapasFran.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content purple accent-3">
+                  <h5 class="center-align white-text">Papas a la francesa</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="chetos1" >
+         <source src="../../assets/media/audio/chatarra/fritQueso.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('chetos1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CHATARRA/Chetos.jpeg" >
+              <!--    <a class="btn-floating halfway-fab waves-effect purple accent-3 btn modal-trigger" href="#COMIDA-UpDown/CHATARRA/Chetos.jpeg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content purple accent-3">
+                  <h5 class="center-align white-text">Frituras con queso</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+    <div class="carousel-item">
+
+          <audio preload="auto" id="refre1" >
+         <source src="../../assets/media/audio/chatarra/refresco.wav" type="audio/wav"/>
+
+          </audio>
+            <div class="col s4">
+              <div class="card" onclick="rep('refre1');">
+                <div class="card-image materialboxed" width="650">
+                  <img src="../../assets/media/img/COMIDA-UpDown/CHATARRA/Refresco.jpg" >
+                <!--  <a class="btn-floating halfway-fab waves-effect purple accent-3 btn modal-trigger" href="#COMIDA-UpDown/CHATARRA/Refresco.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a> -->
+                </div>
+                <div class="card-content purple accent-3">
+                  <h5 class="center-align white-text">Refresco</h5>
+                </div>
+                </div>
+                </div>
+                </div>
+
+ </div>
+ </div>
+</section>
+
+
+
+</section>
+<br>
+        <footer class="page-footer card-panel  grey lighten-5 ">
+
+            <div class="container center-align black-text text-darken-2">
+            ©2018 UpDown Todos los derechos reservados.
+            </div>
+
+        </footer>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+   </script>
+        
+
+
+      <script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rompeplatos</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<img src="IMGO/CEREALES/Avena.jpg" class="pieza" id="avena"draggable="true" alt="">
+	<img src="IMGO/CEREALES/Bolillo.jpg" class="pieza" id="bolillo" draggable="true" alt="">
+	<svg width="1200" height="1200" id="entorno">
+		<g id="fondo"><image xlink:href="css/plativolo.png" width="1000" height="1000" x="200" y=100></g>
+	</svg>
+	<script>
+		var piezas = document.getElementsByClassName('pieza');
+		var padre = document.getElementById('entorno');
+    	var x = 100;
+    	var y = 100;
+    	window.addEventListener('load',init);
+    	function init() {
+    		for (i in piezas) {
+          		var piez = piezas[i];
+          		if (typeof piez.style!="undefined") {
+      				piez.addEventListener('dragstart',dragIniciado,false);
+      				piez.addEventListener('dragend',dragFinalizado, false);
+          		}
+    		}
+    	}
+    	function dragIniciado(e){
+    		
+    	}
+    	function dragFinalizado(e){
+    		var st = this.src;
+    		padre.innerHTML += '<g><image xlink:href="'+ st +'" width="100" height="150" x="'+x+'" y="'+y+'"></g>';
+    		x+=100;
+    	}
+	</script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

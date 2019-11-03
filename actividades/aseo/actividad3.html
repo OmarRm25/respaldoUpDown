@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Aseo</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/aseo.css">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script type="text/javascript">
+    var audios = new Array();
+
+    function rep(elaudio) {
+
+      audios = document.getElementsByTagName('audio');
+      var i;
+      for (i = 0; i < audios.length; i++) {
+        if (audios[i].id == elaudio) {
+          audios[i].load();
+          audios[i].play();
+
+        } else {
+          audios[i].load();
+          //  audios[i].play();
+          audios[i].pause();
+
+        }
+      }
+
+    }
+
+    window.onload = function() {
+      playPause();
+    }
+  </script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+    $(function() {
+      $('.carousel').carousel();
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    $(function() {
+      $('.carousel').carousel({
+        dist: -40,
+        padding: 50,
+        shift: 50,
+        indicators: true
+      });
+    });
+  </script>
+  <header>
+    <nav class="nav-wrapper  blue_nav   ">
+      <div class="row valign-wrapper">
+        <a href="./actividad2.html" data-tooltip="Volver" data-position="bottom"  class="light-blue waves-effect waves-light btn col s2 tooltipped">
+          <-</a>
+            <H5 class="center nombreActividad col s10"> QUÉ NECESITAS PARA PEINARTE </H5>
+            <a href="../../menuprincipal.html" data-position="bottom" data-tooltip="Siguiente" class="light-blue waves-effect waves-light btn col s2 left-align tooltipped">-></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row nomargin">
+        <br>
+        <img class="imagenActividadReponsive hide-on-small-only hide-on-med-only valign center" src="../../assets/media/img/aseo/peinarse.jpeg" alt="">
+        <img class="imagenActividadReponsive hide-on-large-only valign center" src="../../assets/media/img/aseo/peinarse.jpeg" alt="">
+      </div>
+    </div>
+    <!-- Fin de container -->
+    <div id="cosasDeBanio" class="col s12  ">
+      <div class="carousel" style="z-index: 1;">
+
+
+        <div class="carousel-item"><!-- Peine  -->
+          <audio preload="auto" id="peine">
+               <source src="../../assets/media/audio/aseo/peine.ogg" type="audio/ogg"/>
+               <source src="../../assets/media/audio/aseo/peine.mp3" type="audio/mp3"/>
+          </audio>
+          <div class="col s4">
+            <div class="card" id="jabonBtn"  onclick="rep('peine');">
+              <div class="card-image materialboxed" width="650">
+                <img src="../../assets/media/img/aseo/toalla.jpg">
+              </div>
+              <div class="card-content yellow darken-3">
+                <h5 class="center-align white-text">Peine</h5>
+              </div>
+            </div>
+          </div>
+        </div>				<!--Fin  Peine  -->
+
+				<div class="carousel-item"><!-- Gel  -->
+					<audio preload="auto" id="gel">
+							 <source src="../../assets/media/audio/aseo/gel.ogg" type="audio/ogg"/>
+							 <source src="../../assets/media/audio/aseo/gel.mp3" type="audio/mp3"/>
+					</audio>
+					<div class="col s4">
+						<div class="card" id="jabonBtn"  onclick="rep('gel');">
+							<div class="card-image materialboxed" width="650">
+								<img src="../../assets/media/img/aseo/toalla.jpg">
+							</div>
+							<div class="card-content yellow darken-3">
+								<h5 class="center-align white-text">Gel</h5>
+							</div>
+						</div>
+					</div>
+				</div>	<!--Fin   gel  -->
+
+        <div class="carousel-item"><!-- Espejo  -->
+          <audio preload="auto" id="espejo">
+               <source src="../../assets/media/audio/aseo/espejo.ogg" type="audio/ogg"/>
+               <source src="../../assets/media/audio/aseo/espejo.mp3" type="audio/mp3"/>
+          </audio>
+          <div class="col s4">
+            <div class="card" onclick="rep('espejo');">
+              <div class="card-image materialboxed" width="650">
+                <img src="../../assets/media/img/aseo/toalla.jpg">
+              </div>
+              <div class="card-content yellow darken-3">
+                <h5 class="center-align white-text">Espejo</h5>
+              </div>
+            </div>
+          </div>
+        </div>        <!-- Espejo -->
+
+        <div class="carousel-item"><!-- Cepillo   -->
+          <audio preload="auto" id="cepillo">
+               <source src="../../assets/media/audio/aseo/cepillo.ogg" type="audio/ogg"/>
+               <source src="../../assets/media/audio/aseo/cepillo.mp3" type="audio/mp3"/>
+          </audio>
+          <div class="col s4">
+            <div class="card" onclick="rep('cepillo');">
+              <div class="card-image materialboxed" width="650">
+                <img src="../../assets/media/img/aseo/toalla.jpg">
+              </div>
+              <div class="card-content yellow darken-3">
+                <h5 class="center-align white-text">Cepillo</h5>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- Fin de cepillo    -->
+
+      </div>
+      <!-- Fin de div Carrusel  -->
+    </div>
+
+  </main>
+
+
+  <footer class="page-footer card-panel  grey lighten-5 footer">
+
+    <div class="container center-align black-text text-darken-2">
+      ©2018 UpDown Todos los derechos reservados.
+    </div>
+
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.materialboxed').materialbox();
+    });
+  </script>
+  <script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+</body>
+
+</html>

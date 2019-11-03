@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Aseo</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/galeriaGrid.css">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../../assets/css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script type="text/javascript">
+    var audios = new Array();
+
+    function rep(elaudio) {
+
+      audios = document.getElementsByTagName('audio');
+      var i;
+      for (i = 0; i < audios.length; i++) {
+        if (audios[i].id == elaudio) {
+          audios[i].load();
+          audios[i].play();
+
+        } else {
+          audios[i].load();
+          //  audios[i].play();
+          audios[i].pause();
+
+        }
+      }
+
+    }
+
+    window.onload = function() {
+      playPause();
+    }
+  </script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+    $(function() {
+      $('.carousel').carousel();
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    $(function() {
+      $('.carousel').carousel({
+        dist: -40,
+        padding: 50,
+        shift: 50,
+        indicators: true
+      });
+    });
+  </script>
+  <header>
+    <nav class="nav-wrapper  blue_nav   ">
+      <div class="row valign-wrapper">
+        <a href="./actividad2.html" data-tooltip="Volver" data-position="bottom" class="light-blue waves-effect waves-light btn col s2 tooltipped">
+          <-</a>
+            <H5 class="center nombreActividad col s10 titulo"> QUÉ NECESITAS PARA PEINARTE </H5>
+            <a href="../../menuprincipal.html" data-position="bottom" data-tooltip="Siguiente" class="light-blue waves-effect waves-light btn col s2 left-align tooltipped">-></a>
+      </div>
+    </nav>
+  </header>
+  <div class="bloqueActividad">
+    <div class="actividad">
+        <p>Foto general ...</p>
+    </div>
+    <div class="botonera">
+      <div class="boton"></div>
+      <div class="boton"></div>
+      <div class="boton"></div>
+      <div class="boton"></div>
+      <div class="boton"></div>
+      <div class="boton"></div>
+      <div class="boton"></div>
+      <div class="boton"></div>
+      <div class="boton"></div>
+      <div class="boton"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <footer class="page-footer card-panel  grey lighten-5 footer">
+
+    <div class="container center-align black-text text-darken-2">
+      ©2018 UpDown Todos los derechos reservados.
+    </div>
+
+  </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.materialboxed').materialbox();
+    });
+  </script>
+  <script type="text/javascript" src="../../assets/js/materialize.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ALIMENTACION</title>
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/es.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript">
+        var audios = new Array();
+          function rep(elaudio){
+                  audios=document.getElementsByTagName('audio');
+                  var i;
+                      for (i=0; i<audios.length; i++) {
+                          if (audios[i].id==elaudio){
+                                 audios[i].load();
+                                 audios[i].play();
+                          }   else{
+                                  audios[i].pause();
+                              }
+                      }
+
+          }
+      </script>
+</head>
+<body>
+<nav class="transparent z-depth-0">
+
+  <div class="row">
+      <a href="#!" class="col s2 m4 2 black-text text-darken-2 "><i class="material-icons">&#xE5C4;</i></a>
+      <H5 class="col s2 m6 black-text text-darken-2 left-align hide-on-small-only hide-on-med-only">Conoce los Diferentes alimentos.</H5>
+      <h5 class="col s12 m6 black-text text-darken-2 center-align hide-on-large-only">Conoce los Diferentes alimentos.</h5>
+      <a href="#!" class="col s12 m4 2 black-text text-darken-2 right-align right "><i class="material-icons">&#xE5C8;</i></a>
+      
+  </div>
+</nav>
+<br><br><br><br> 
+<section>
+  <br>
+  <ul class="tabs tablas transparent z-depth-0">
+    <li class="tab col s1"><a class="waves-effect yellow darken-3 btn white-text text-darken-2" href="#cereal">CEREALES</a></li>
+  <li class="tab col s1"><a class="waves-effect green darken-1 btn white-text text-darken-2" href="#vege">VEGETALES</a></li>
+    <li class="tab col s1 "><a class="waves-effect pink accent-2 btn white-text text-darken-2" href="#fruta">FRUTAS</a></li>
+    <li class="tab col s1"><a class="waves-effect red darken-1 btn white-text text-darken-2" href="#carne">CARNES</a></li>
+    <li class="tab col s1"><a class="waves-effect light-blue accent-3 btn white-text text-darken-2" href="#lac">LACTEOS</a></li>
+  </ul>
+
+  
+  <div id="carne" class="col s12 "> 
+    <div class="row">
+
+
+
+          <audio preload="auto" id="1">
+          <source src="media/win1.mp3" type="audio/mp3"/>
+          <source src="media/win1.ogg" type="audio/ogg"/>
+          </audio>
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image materialboxed" width="650">
+                  <img src="COMIDA-UpDown/CARNES Y LEGUMBRES/Carne Cerdo.jpg" >
+                  <a class="btn-floating halfway-fab waves-effect red darken-1 btn modal-trigger" href="#COMIDA-UpDown/CARNES Y LEGUMBRES/Carne Cerdo.jpg" onclick="rep('1');"><i class="material-icons">&#xE037;</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Carne de cerdo</p>
+               </div>
+               </div>
+               </div>
+
+ <div id="carne" class="col s12 "> 
+
+          <audio preload="auto" id="4">
+          <source src="media/win1.mp3" type="audio/mp3"/>
+          <source src="media/win1.ogg" type="audio/ogg"/>
+          </audio>
+            <div class="col s4 ">
+              <div class="card">
+                <div class="card-image materialboxed" width="650">
+                  <img src="/home/updown/Documentos/UpDownRifa/COMIDA-UpDown/CARNES Y LEGUMBRES/Carne Res.jpg" >
+                  <a class="btn-floating halfway-fab waves-effect red darken-1 btn modal-trigger" href="#/home/updown/Documentos/UpDownRifa/COMIDA-UpDown/CARNES Y LEGUMBRES/Carne Res.jpg" onclick="rep('4');"><i class="material-icons">&#xE037;</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Carne de res</p>
+                
+              </div>
+
+            </div>
+    </div>
+  </div>
+ </div>
+              </div>
+
+            </div>
+    
+     
+    
+
+
+ <div id="cereal" class="col s12 "> 
+    <div class="row">
+
+          <audio preload="auto" id="2">
+          <source src="media/win.mp3" type="audio/mp3"/>
+          <source src="media/win.ogg" type="audio/ogg"/>
+          </audio>
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image materialboxed" width="650">
+                  <img src="COMIDA-UpDown/CEREALES/avena.jpg" >
+                  <a class="btn-floating halfway-fab waves-effect yellow darken-3 btn modal-trigger" href="#COMIDA-UpDown/CEREALES/avena.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Avena</p>
+                </div>
+              </div>
+
+            </div>
+    
+     
+    </div>
+</div>
+
+<div id="fruta" class="col s12 "> 
+    <div class="row">
+
+          <audio preload="auto" id="2">
+          <source src="media/win.mp3" type="audio/mp3"/>
+          <source src="media/win.ogg" type="audio/ogg"/>
+          </audio>
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image materialboxed" width="650">
+                  <img src="COMIDA-UpDown/FRUTAS/Manzana.jpg" >
+                  <a class="btn-floating halfway-fab waves-effect pink accent-2 btn modal-trigger" href="#COMIDA-UpDown/FRUTAS/Manzana.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Manzana</p>
+                </div>
+              </div>
+
+            </div>
+    
+     
+    </div>
+</div>
+
+<div id="lac" class="col s12 "> 
+    <div class="row">
+
+          <audio preload="auto" id="2">
+          <source src="media/win.mp3" type="audio/mp3"/>
+          <source src="media/win.ogg" type="audio/ogg"/>
+          </audio>
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image materialboxed" width="650">
+                  <img src="COMIDA-UpDown/LACTEOS/queso.jpg" >
+                  <a class="btn-floating halfway-fab waves-effect light-blue accent-3 btn modal-trigger" href="#COMIDA-UpDown/LACTEOS/queso.jpg" onclick="rep('2');"><i class="material-icons">&#xE037;</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Queso</p>
+                </div>
+              </div>
+
+            </div>
+    
+     
+    </div>
+</div>
+
+
+<div id="vege" class="col s12 "> 
+    <div class="row">
+
+
+          <audio preload="auto" id="3">
+          <source src="media/win2.mp3" type="audio/mp3"/>
+          <source src="media/win2.ogg" type="audio/ogg"/>
+          </audio>
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image materialboxed" width="650">
+                  <img src="COMIDA-UpDown/VERDURA/zanahoria.jpg" >
+                  <a class="btn-floating halfway-fab waves-effect green darken-1 btn modal-trigger" href="#COMIDA-UpDown/VERDURA/zanahoria.jpg" onclick="rep('3');"><i class="material-icons">&#xE037;</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Zanahoria</p>
+                </div>
+              </div>
+
+            </div>
+    
+     
+    </div>
+</div>
+
+
+</section>
+
+        <footer class="page-footer card-panel  grey lighten-5 ">
+          
+            <div class="container center-align black-text text-darken-2">
+            © 2017 Copyright 
+            </div>
+          
+        </footer>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+      </script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

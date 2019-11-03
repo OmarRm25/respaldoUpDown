@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Prueba DnD
+            </title>
+        </meta>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <img src="img/pollo_completo.png" alt="">
+            </button>
+            <div class="dropdown-content">
+                <img class="pieza" src="img/alita_de_pollo.jpg" alt="" draggable="true" >
+                <img class="pieza" src="img/pierna_de_pollo.jpg" alt="" draggable="true">
+                <img class="pieza" src="img/pechuga_de_pollo.jpg" alt="" draggable="true">
+            </div>
+        </div>
+        <div class="contenedor">
+        </div>
+       <script>
+
+         var piezas = document.getElementsByClassName('pieza');
+        	window.addEventListener('load',init);
+        	var conten = document.querySelector('.contenedor');
+        	function init() {
+        		conten.addEventListener('dragover',manejarEntrada,false);
+        		conten.addEventListener('dragleave',manejarSalida,false);
+        		conten.addEventListener('drop',manejarDrop,false);
+        		for (i in piezas) {
+              		var piez = piezas[i];
+              		if (typeof piez.style!="undefined") {
+          				piez.addEventListener('dragstart',dragIniciado,false);
+          				piez.addEventListener('dragend',dragFinalizado, false);
+              		}
+        		}
+        	}
+        	function dragIniciado(e) {
+        		//this.src = "img/pierna_de_pollo.jpg";
+        		var padre = document.createElement('p');
+        		var clon = this.cloneNode(true);
+            clon.draggable = false;
+        		padre.appendChild(clon);
+        		e.dataTransfer.setData('text', padre.innerHTML);
+        	}
+        	function dragFinalizado(e) {
+            //this.src = "img/alita_de_pollo.jpg";
+        	}
+        	function manejarDrop(e) {
+        		e.preventDefault();
+        		var datos = e.dataTransfer.getData('text');
+        		this.innerHTML += datos;
+        		this.classList.remove('over');
+            //init();
+        	}
+        	function manejarEntrada(e) {
+        		e.preventDefault();
+        		this.classList.add('over');
+        		return false;
+        	}
+        	function manejarSalida(e) {
+        		this.classList.remove('over');
+        	}
+        </script>
+    </body>
+</html>
